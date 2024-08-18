@@ -22,10 +22,8 @@ function NavBar() {
             <NavLink className="nav-link" to="/">Home</NavLink>
             {
               hasToken ? (
-                <div className='d-flex justify-content-center align-items-center'>
                 <NavLink to="/profile" className='nav-link'>Profile</NavLink>
-                <NavLink to="/contact" className='nav-link'>Contact</NavLink>
-                </div>
+                
               ) : (
                 <NavLink to="/login" className='nav-link'>Login</NavLink>
               )
