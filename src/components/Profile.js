@@ -71,7 +71,7 @@ export default function Profile() {
                             <tr key={item.orderID}>
                               <td>{index+1}</td>
                               <td>{item.NAME}</td>
-                              <td><span className='text-decoration-line-through text-danger'>{item.price}</span> <span className='text-primary me-5'>{item.discount} LE</span></td>
+                              <td><span className='text-decoration-line-through text-danger'></span> <span className='text-primary me-5'>{item.discount} LE</span></td>
                               <td className='cart-img'>
                                   <img src={`http://127.0.0.1:8000/upload/products/${item.image}`} alt={item.NAME}/>
                               </td>
